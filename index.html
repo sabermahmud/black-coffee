@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/322237ef1b.js" crossorigin="anonymous"></script>
+    <!--tailwind css cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- tailwind config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                    },
+                },
+            },
+        };
+    </script>
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Coffee Shop</title>
+    <style>
+        .caveat {
+            font-family: "Caveat", cursive;
+        }
+
+        .poppins {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="poppins">
+    <header
+        class=" bg-[url('./imgs/coffee-bean.jpeg')] bg-cover bg-center text-yellow-100  flex flex-col gap-4 mx-auto min-h-svh sm:h-auto">
+        <div class="bg-black/60 w-full min-h-svh ">
+            <!-- navbar section -->
+            <nav class=" flex flex-col w-full mb-10 gap-4 bg-black/60 py-4 px-8">
+                <!-- navBar -->
+                <div class="navBar flex justify-between items-center ">
+                    <div class="nav-start">
+                        <div class="flex items-center gap-1">
+                            <a href="#" class="caveat text-2xl hover:text-yellow-400">Find</a>
+                            <p class="text-2xl">/</p>
+                            <a href="#" class="caveat text-2xl hover:text-yellow-400">Contacts</a>
+                        </div>
+                    </div>
+                    <div class="nav-middle">
+                        <div>
+                            <h1 class="hidden sm:block text-center  text-6xl text-yellow-500 border-b-2 ">BLACK COFFEE
+                            </h1>
+                        </div>
+
+                    </div>
+                    <div class="nav-end">
+                        <div class="flex items-center gap-1">
+                            <a href="#" class="caveat text-2xl hover:text-yellow-400">Login</a>
+                            <p class="text-2xl">/</p>
+                            <a href="#" class="caveat text-2xl hover:text-yellow-400">Register</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- menuBar -->
+                <div class="menu  mt-8 ">
+                    <ul class="hidden sm:flex justify-between items-center">
+                        <li
+                            class="border-b-2 border-transparent hover:border-yellow-500 hover:text-yellow-500 duration-200 transition-all">
+                            HOME</li>
+                        <li
+                            class="border-b-2 border-transparent hover:border-yellow-500 hover:text-yellow-500 duration-200 transition-all">
+                            ABOUT</li>
+                        <li
+                            class="border-b-2 border-transparent hover:border-yellow-500 hover:text-yellow-500 duration-200 transition-all">
+                            MENU</li>
+                        <li
+                            class="border-b-2 border-transparent hover:border-yellow-500 hover:text-yellow-500 duration-200 transition-all">
+                            GALLERIES</li>
+                        <li class="border-b-2 border-transparent hover:border-yellow-500
+                        hover:text-yellow-500 duration-200 transition-all">NEWS</li>
+                        <li
+                            class="border-b-2 border-transparent hover:border-yellow-500 hover:text-yellow-500 duration-200 transition-all">
+                            CONTACTS</li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- banner section -->
+            <div>
+                <div class=" sm:hidden flex flex-col gap-4 w-full p-4 h-full my-auto">
+                    <div>
+                        <h1 class="text-center  text-4xl font-bold">BLACK COFFEE</h1>
+                    </div>
+                    <hr class="w-3/4 mx-auto " />
+
+                    <el-dropdown class="inline-block">
+                        <button
+                            class="inline-flex w-full justify-center gap-x-1.5 rounded-md  px-3 py-2 text-lg font-semibold text-yellow-400 inset-ring-1 inset-ring-white/5">
+                            MENU
+                            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                                class="-mr-1 size-5 text-yellow-400">
+                                <path
+                                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                                    clip-rule="evenodd" fill-rule="evenodd" />
+                            </svg>
+                        </button>
+
+                        <el-menu anchor="bottom end" popover
+                            class="w-56 origin-top-right rounded-md bg-gray-800 outline-1 -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+                            <div class="py-1">
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">HOME</a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">ABOUT</a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">MENU</a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">GALLERIES</a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">NEWS</a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">CONTACTS</a>
+                                <form action="#" method="POST">
+                                    <button type="submit"
+                                        class="block w-full px-4 py-2 text-left text-lg text-white bg-red-400 focus:bg-white/60 focus:text-white focus:outline-hidden">Sign
+                                        out</button>
+                                </form>
+
+
+                            </div>
+                        </el-menu>
+                    </el-dropdown>
+
+
+                </div>
+                <!-- banner -->
+                <div class="lg:flex w-full items-center p-4">
+                    <!-- banner img -->
+                    <div class="w-full">
+                        <img src="imgs/coffee-cup.png" class="w-full" alt="">
+                    </div>
+                    <!-- banner dialog -->
+                    <div class="bg-black/50 py-20 px-10 rounded-lg ">
+                        <div class="flex flex-col p-3 w-full gap-4">
+                            <h2 class="text-5xl font-semibold text-yellow-500">Lorem ipsum dolor sit amet.</h2>
+                            <p class="text-xl text-yellow-800">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Eaque, illo quisquam minus maxime aliquam aspernatur, beatae blanditiis tenetur, sunt
+                                amet
+                                necessitatibus eos consequuntur minima officia harum deserunt rerum ratione ullam?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- About -->
+        <section class="w-full p-4 bg-gray-50 flex flex-col gap-4 items-center">
+            <p class="text-yellow-700/50 text-3xl caveat text-center">because we love coffee</p>
+            <h2 class="text-center text-5xl font-bold text-yellow-800">Our Mission</h2>
+            <p class="text-center text-gray-400 px-4">
+                Everything we do is a matter of heart, body and soul. Our mission is to provide sustainably sourced,
+                hand-picked, micro-roasted quality coffee. Great coffee is our passion and we want to share it with you.
+            </p>
+            <button
+                class="border-2 border-yellow-800 hover:bg-yellow-800 py-4 hover:text-yellow-50 px-6 duration-300 transition-all w-56 mt-4">learn
+                more</button>
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+</body>
+
+</html>
