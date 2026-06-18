@@ -145,7 +145,7 @@
                 <div class="lg:flex w-full items-center p-4">
                     <!-- banner img -->
                     <div class="w-full">
-                        <img src="imgs/coffee-cup.png" class="w-full" alt="">
+                        <img src="imgs/coffee-cup.png" id="coffee-cup" class="w-full" alt="">
                     </div>
                     <!-- banner dialog -->
                     <div class="bg-black/50 py-20 px-10 rounded-lg ">
@@ -176,7 +176,13 @@
         </section>
     </main>
 
-
+    <script>
+        window.addEventListener("scroll", () => {
+            const rotation = window.scrollY * 0.2;
+            document.getElementById("coffee-cup").style.transform =
+                `rotate(${rotation}deg)`;
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
 </body>
 
