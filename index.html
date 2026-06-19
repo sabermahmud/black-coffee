@@ -80,7 +80,8 @@
                             ABOUT</li>
                         <li
                             class="border-b-2 border-transparent hover:border-orange-200 hover:text-orange-200 duration-200 transition-all">
-                            MENU</li>
+                            <a href="#menu">Menu</a>
+                        </li>
                         <li
                             class="border-b-2 border-transparent hover:border-orange-200 hover:text-orange-200 duration-200 transition-all">
                             GALLERIES</li>
@@ -179,21 +180,25 @@
                 more</button>
         </section>
         <!-- our service -->
-        <section class="h-[700px] w-full">
-            <div class="relative w-full h-full overflow-hidden p-4">
-                <!-- bg video -->
-                <video  autoplay muted loop playsinline class="hidden md:block absolute top-0 left-0 w-full h-full object-cover z-0"
+        <section class="h-[500px] w-full">
+            <div class="relative w-full h-full overflow-hidden p-6">
+                <!-- bg video first video for desktop view -->
+                <video autoplay muted loop playsinline
+                    class="hidden md:block absolute top-0 left-0 w-full h-full object-cover z-0"
                     src="videos/10740240-hd_1920_1080_25fps.mp4"></video>
                 <!-- video2 for mobile view -->
-                 <video  autoplay muted loop playsinline class="block md:hidden absolute top-0 left-0 w-full h-full object-cover z-0"
+                <video autoplay muted loop playsinline
+                    class="block md:hidden absolute top-0 left-0 w-full h-full object-cover z-0"
                     src="videos/12572641_1080_1920_30fps.mp4"></video>
                 <div class="md:flex absolute w-full h-full top-0 left-0 z-10">
                     <div class=" bg-black/40 w-full p-4">
                         <div class="relative z-20 flex flex-col items-center justify-center h-full text-white gap-4
                         ">
-                            <h3 class="text-yellow-100/80 text-4xl caveat text-center">Great beans. Perfect grind. A better cup every time </h3>
+                            <h3 class="text-yellow-100/80 text-4xl caveat text-center">Great beans. Perfect grind. A
+                                better cup every time </h3>
                             <h2 class="text-center text-5xl font-bold text-white">Our Service</h2>
-                            <p class="text-center text-gray-400 px-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem odit ratione
+                            <p class="text-center text-gray-400 px-4">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Exercitationem odit ratione
                                 labore,
                                 accusamus omnis voluptatibus voluptatem. Autem, neque quis! Ab praesentium rerum quaerat
                                 quod saepe
@@ -209,6 +214,46 @@
                 </div>
             </div>
 
+        </section>
+        <!-- menu -->
+        <section id="menu" class="p-4">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 border-2 p-4 items-center h-full">
+                <!-- menu images -->
+                <div class="lg:col-span-1 border-2 border-yellow-900">
+                    <div class="flex border-2 border-white">
+                        <div>
+                            <div class="border-3 border-white object-cover">
+                                <img src="imgs/Hibiscus Drink.jpeg" alt="">
+                            </div>
+                            <div class="border-3 border-white object-cover">
+                                <img src="imgs/Perfect Chewy Chocolate Chip Cookies – Soft in the Middle, Crispy Edges, Bakery Style Recipe.jpeg"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="border-3 border-white object-cover">
+                                <img src="imgs/curusan.jpeg" alt="">
+                            </div>
+                            <div class="border-3 border-white object-cover">
+                                <img src="imgs/espresso-cup.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- menu description -->
+                <div class="lg:col-span-2 flex flex-col items-center gap-4">
+                    <p class="text-yellow-700/50 text-3xl caveat text-center">Your every bite and every sip caries our signature.</p>
+                    <h2 class="text-center text-5xl font-bold text-yellow-800">Discover Our Delicious Foods</h2>
+                    <p class="text-center text-gray-400 px-4">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum saepe molestiae, nisi amet
+                        mollitia iste vel tenetur doloremque a esse quod omnis, magnam, accusamus iure sed eos dolorem
+                        odit id! Libero expedita quidem blanditiis doloribus id. Sint quos excepturi quibusdam.
+                    </p>
+                    <button
+                        class="border-2 border-yellow-800 hover:bg-yellow-800 py-4 hover:text-yellow-50 px-6 duration-300 transition-all w-56 mt-4">Order
+                        Now</button>
+                </div>
+            </div>
         </section>
     </main>
 
