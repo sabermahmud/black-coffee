@@ -42,8 +42,8 @@
 
 <body class="poppins">
     <header
-        class=" bg-[url('./imgs/coffee-bean.jpeg')] bg-cover bg-fixed bg-center text-yellow-100  flex flex-col gap-4 mx-auto min-h-svh sm:h-auto">
-        <div class="bg-black/60 w-full min-h-svh ">
+        class=" bg-[url('./imgs/coffee-bean.jpeg')] bg-cover bg-scroll md:bg-fixed bg-center text-yellow-100  flex flex-col gap-4 mx-auto min-h-svh sm:h-auto">
+        <div class="bg-black/50 w-full min-h-svh ">
             <!-- navbar section -->
             <nav class=" flex flex-col w-full mb-10 gap-4 bg-black/60 py-4 px-8">
                 <!-- navBar -->
@@ -84,7 +84,9 @@
                         <li
                             class="border-b-2 border-transparent hover:border-orange-200 hover:text-orange-200 duration-200 transition-all">
                             GALLERIES</li>
-                        <li class="border-b-2 border-transparent hover:border-orange-200 hover:text-orange-200 duration-200 transition-all">NEWS</li>
+                        <li
+                            class="border-b-2 border-transparent hover:border-orange-200 hover:text-orange-200 duration-200 transition-all">
+                            NEWS</li>
                         <li
                             class="border-b-2 border-transparent hover:border-orange-200 hover:text-orange-200 duration-200 transition-all">
                             CONTACTS</li>
@@ -95,7 +97,7 @@
             <div>
                 <div class=" sm:hidden flex flex-col gap-4 w-full p-4 h-full my-auto">
                     <div>
-                        
+
                         <img class="w-3/4 mx-auto" src="imgs/logo.png" alt="">
                     </div>
 
@@ -140,19 +142,23 @@
 
                 </div>
                 <!-- banner -->
-                <div class="lg:flex w-full items-center p-4">
+                <div class="lg:flex gap-4 w-full items-center p-4">
                     <!-- banner img -->
                     <div class="w-full overflow-hidden">
-                        <img src="imgs/coffee.png" id="coffee-cup" class="w-full   mx-auto" alt="">
+                        <img src="imgs/coffee.png" id="coffee-cup" class="object-cover h-full mx-auto" alt="">
                     </div>
                     <!-- banner dialog -->
                     <div class="bg-black/50 py-20 px-10 rounded-lg ">
                         <div class="flex flex-col p-3 w-full gap-4">
                             <h2 class="text-5xl font-semibold text-yellow-500">Lorem ipsum dolor sit amet.</h2>
-                            <p class="text-xl text-yellow-800">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            <p class="text-xl text-yellow-100/70">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit.
                                 Eaque, illo quisquam minus maxime aliquam aspernatur, beatae blanditiis tenetur, sunt
                                 amet
                                 necessitatibus eos consequuntur minima officia harum deserunt rerum ratione ullam?</p>
+                            <button
+                                class="flex flex-row items-center gap-4 justify-center border-2 border-yellow-200 w-56 px-4 py-2 text-lg hover:bg-yellow-200 transition-all duration-500 hover:text-black animate-pulse mt-8">Order
+                                Now <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
                         </div>
                     </div>
                 </div>
@@ -172,7 +178,35 @@
                 class="border-2 border-yellow-800 hover:bg-yellow-800 py-4 hover:text-yellow-50 px-6 duration-300 transition-all w-56 mt-4">learn
                 more</button>
         </section>
-        <!--  -->
+        <!-- our service -->
+        <section class="h-[700px] w-full">
+            <div class="relative w-full h-full overflow-hidden p-4">
+                <!-- bg video -->
+                <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0"
+                    src="videos/10740240-hd_1920_1080_25fps.mp4"></video>
+                <div class="md:flex absolute w-full h-full top-0 left-0 z-10">
+                    <div class=" bg-black/40 w-full p-4">
+                        <div class="relative z-20 flex flex-col items-center justify-center h-full text-white gap-4
+                        ">
+                            <h3 class="text-yellow-100/80 text-4xl caveat text-center">Great beans. Perfect grind. A better cup every time </h3>
+                            
+                            <p class="text-center text-gray-400 px-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem odit ratione
+                                labore,
+                                accusamus omnis voluptatibus voluptatem. Autem, neque quis! Ab praesentium rerum quaerat
+                                quod saepe
+                                illo provident recusandae alias magni. Voluptas, quod! Iure earum quisquam in sint
+                                facere
+                                maiores
+                                minus!</p>
+                        </div>
+                    </div>
+                    <div class="w-full">
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
 
     <script>
@@ -181,6 +215,10 @@
             document.getElementById("coffee-cup").style.transform =
                 `rotate(${rotation}deg)`;
         });
+
+        // window.addEventListener("scroll",()=>{
+        //     const fadeInn = window.
+        // })
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
 </body>
