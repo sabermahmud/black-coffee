@@ -168,19 +168,38 @@
     </header>
     <main>
         <!-- About -->
-        <section class="w-6/7 mx-auto my-10 p-10 bg-orange-400/70 flex flex-col gap-4 items-center min-h-[400px]">
-            <p class="text-yellow-700/50 text-3xl caveat text-center">because we love coffee</p>
-            <h2 class="text-center text-5xl font-bold text-yellow-800">Our Mission</h2>
-            <p class="text-center text-lg text-gray-50 px-4">
-                Everything we do is a matter of heart, body and soul. Our mission is to provide sustainably sourced,
-                hand-picked, micro-roasted quality coffee. Great coffee is our passion and we want to share it with you.
-            </p>
-            <button
-                class="border-2 border-yellow-800 hover:bg-yellow-800 py-4 hover:text-yellow-50 px-6 duration-300 transition-all w-56 mt-4">learn
-                more</button>
+        <section class="m-4">
+            <div
+                class="flex flex-col lg:w-5/7 lg:relative mx-auto lg:my-40 p-4 bg-yellow-800/80 flex gap-4 items-center min-h-[400px]">
+                <!-- founder img -->
+                <div class="lg:absolute lg:top-0 lg:left-0 lg:rounded-r-full rounded-b-full border-5 border-white">
+                    <img src="imgs/walid.enc" class="w-full lg:w-46 object-cover lg:rounded-r-full rounded-b-full"
+                        alt="">
+                </div>
+                <!-- about article -->
+                <div class="lg:mt-30 flex flex-col gap-4">
+                    <h2 class="text-center text-5xl font-bold text-yellow-500">Our Journey</h2>
+                    <p class="text-center text-lg text-gray-50 px-4">
+                        Black Coffee is a trusted coffee brand founded by Shaikh Waleed As Suhaimi with a passion for
+                        delivering exceptional coffee and memorable customer experiences. Through dedication to quality
+                        and
+                        consistency, Black Coffee has expanded to four branches across Al Hanakiyah—Dawar Sa'ah, Aqdah,
+                        Souq
+                        Al Hanakiyah, and Estitan. We take pride in serving carefully crafted beverages in a warm and
+                        welcoming atmosphere where friends, families, and coffee enthusiasts can relax and connect.
+                        Every
+                        cup reflects our commitment to excellence, making Black Coffee a favorite destination for coffee
+                        lovers throughout the region.
+                    </p>
+                    <div class="mt-4">
+                        <p class="text-white caveat text-2xl text-end">Shaikh Waleed As Suhaimy</p>
+                        <p class="text-sm text-yellow-200 text-end">Founder of BLACK COFFEE</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- our service -->
-        <section class="h-[500px] w-full">
+        <section class="h-[1000px] lg:h-[500px] w-full">
             <div class="relative w-full h-full overflow-hidden p-6">
                 <!-- bg video first video for desktop view -->
                 <video autoplay muted loop playsinline
@@ -217,9 +236,9 @@
         </section>
         <!-- menu -->
         <section id="menu" class="p-4">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 border-2 p-4 items-center h-full">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 bg-yellow-800/20 p-4 items-center h-full">
                 <!-- menu images -->
-                <div class="lg:col-span-1 border-2 border-yellow-900 rounded-xl">
+                <div class="lg:col-span-1">
                     <div class="grid grid-cols-1 lg:grid-cols-3 items-center gap-4  p-4">
                         <div class="grid grid-rows-3 grid-cols-1 gap-4 h-[400px]">
                             <div class="row-span-2">
@@ -230,14 +249,14 @@
                                     class="w-full h-full object-cover" alt="">
                             </div>
                         </div>
-                        <div class=" col-span-1  h-full"><img src="imgs/Layer Honey Cake.jpeg" class="w-full h-full object-cover" alt=""></div>
+                        <div class=" col-span-1  h-full"><img src="imgs/Layer Honey Cake.jpeg"
+                                class="w-full h-full object-cover" alt=""></div>
                         <div class="grid grid-rows-3 grid-cols-1 gap-4 h-[400px]">
                             <div class="row-span-1">
                                 <img src="imgs/curusan.jpeg" class="w-full h-full object-cover" alt="">
                             </div>
                             <div class="row-span-2">
-                                <img src="imgs/espresso-cup.jpeg"
-                                    class="w-full h-full object-cover" alt="">
+                                <img src="imgs/espresso-cup.jpeg" class="w-full h-full object-cover" alt="">
                             </div>
                         </div>
                     </div>
@@ -259,6 +278,7 @@
             </div>
         </section>
     </main>
+
 
     <script>
         window.addEventListener("scroll", () => {
